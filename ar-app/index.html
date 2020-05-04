@@ -1,0 +1,40 @@
+<!--IT17006880 De Silva N.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Gift shop</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs>
+    <a-assets>
+        <a-asset-item id="tree" src="assets/pink_rock_garden/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-marker preset="hiro">
+        <a-box color="tomato" position="0 1.1 -1.5" rotation="0 0 0" depth="0.1" height="0.7" width="2.0"></a-box>
+
+        <a-gltf-model src="#tree" position="0 0 -0.1" rotation="0 90 0" scale="0.03 0.03 0.03"
+                      rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        </a-gltf-model>
+
+        <a-text value="The Gift Shop" position="-0.90 1.40 -1" rotation="0 0 0" width="4" color="white"></a-text>
+        <a-text value="For all your gifting needs ... " position="-0.80 1.25 -1" rotation="0 0 0" width="2"
+                color="black"></a-text>
+        <a-text height="1" value="Item Name : Ornamental Pink Rock Garden" position="-0.90 1.10 -1" rotation="0 0 0"
+                scale="0.3 0.3 0.3" color="black"></a-text>
+        <a-text value="Price : Rs.1500" position="-0.90 1.00 -1" rotation="0 0 0" scale="0.3 0.3 0.3"
+                color="black"></a-text>
+
+    </a-marker>
+
+    <a-entity camera></a-entity>
+
+</a-scene>
+</body>
+
+</body>
+</html>
