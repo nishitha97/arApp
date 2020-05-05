@@ -11,13 +11,13 @@
 <body style='margin : 0px; overflow: hidden;'>
 <a-scene embedded arjs>
     <a-assets>
-        <a-asset-item id="tree" src="assets/pink_rock_garden/scene.gltf"></a-asset-item>
+        <a-asset-item id="pink_rock_garden" src="assets/pink_rock_garden/scene.gltf"></a-asset-item>
     </a-assets>
 
     <a-marker preset="hiro">
         <a-box color="tomato" position="0 1.1 -1.5" rotation="0 0 0" depth="0.1" height="0.7" width="2.0"></a-box>
 
-        <a-gltf-model src="#tree" position="0 0 -0.1" rotation="0 90 0" scale="0.03 0.03 0.03"
+        <a-gltf-model src="#pink_rock_garden" position="0 0 -0.1" rotation="0 90 0" scale="0.03 0.03 0.03"
                       rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
         </a-gltf-model>
 
